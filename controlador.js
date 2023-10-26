@@ -31,7 +31,6 @@ function main() {
     
     
     function mostrarPistas(filaTablero) { //mostrarPistas espera recibir la ultima fila que el usuario ha completado y muesrta las pistas
-        console.log(filaTablero)
         let combinacionGanadora = obtenerCombinacionganadora();
         todosTd = [];
         for (let i = 0; i < trPistas.length; i++) { //aqui obtengo cada tr con sus td
@@ -44,17 +43,17 @@ function main() {
         }
     
         for (let i = 0; i < 4; i++) {//voy recorriendo cada fila de las pistas i<4 porque son las combinaciones posibles    
-            if(combinacionGanadora[i] == filaTablero[i]){//comprueba si el usuario ha acertado posicion y color
-                let indiceAleatorio = Math.floor(Math.random() * 4); // Genera un número entre 0 y 3
-                contAciertos++;
-                todosTd[indiceAleatorio + contadorFilasTablero].classList.remove("grisPista");
-                todosTd[indiceAleatorio + contadorFilasTablero].classList.add("negroPista");
-            }
             if (filaTablero.includes(combinacionGanadora[i])) { //Comprueba si la fila del usuario contiene un color ganador
-                let indiceAleatorio = Math.floor(Math.random() * 4); // Genera un número entre 0 y 3
-                    todosTd[indiceAleatorio + contadorFilasTablero].classList.remove("grisPista");
-                    todosTd[indiceAleatorio + contadorFilasTablero].classList.add("blancoPista");
+                    todosTd[i + contadorFilasTablero].classList.remove("grisPista");
+                    todosTd[i + contadorFilasTablero].classList.add("blancoPista");
                 }
+                console.log(filaTablero[i] + " " + combinacionGanadora[i])
+            if(combinacionGanadora[i] == filaTablero[i]){//comprueba si el usuario ha acertado posicion y color
+                contAciertos++;
+                todosTd[i + contadorFilasTablero].classList.remove("grisPista");
+                todosTd[i + contadorFilasTablero].classList.remove("blancoPista");
+                todosTd[i + contadorFilasTablero].classList.add("negroPista");
+            }
                 
             }
             if (comprobarVictoria()) {
