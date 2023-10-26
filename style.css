@@ -1,0 +1,127 @@
+.titulo{
+    margin-top: 40px;
+    text-align: center;
+}
+.tablasContainer{
+    display: flex;
+align-content: space-between;
+}
+.fichasJugador{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 20px;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.fichasJugadorTable tr td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+.verde {
+  cursor: pointer;
+    width: 50px; /* Establece el ancho del círculo (ajusta según tus necesidades) */
+    height: 50px; /* Establece la altura del círculo (ajusta según tus necesidades) */
+    background-color: green; /* Color de fondo rojo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+  }
+  .verde:hover {
+    background-color: rgb(0, 99, 0);
+}
+
+  .azul {
+    cursor: pointer;
+    width: 50px; /* Establece el ancho del círculo (ajusta según tus necesidades) */
+    height: 50px; /* Establece la altura del círculo (ajusta según tus necesidades) */
+    background-color: blue; /* Color de fondo rojo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+  }
+  .azul:hover {
+    background-color: rgb(0, 0, 141);
+}
+  .amarillo {
+    cursor: pointer;
+    width: 50px; /* Establece el ancho del círculo (ajusta según tus necesidades) */
+    height: 50px; /* Establece la altura del círculo (ajusta según tus necesidades) */
+    background-color: yellow; /* Color de fondo rojo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+  }
+  .amarillo:hover {
+    background-color: rgb(149, 149, 0);
+  }
+
+  .rojo {
+    cursor: pointer;
+    width: 50px; /* Establece el ancho del círculo (ajusta según tus necesidades) */
+    height: 50px; /* Establece la altura del círculo (ajusta según tus necesidades) */
+    background-color: red; /* Color de fondo rojo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+  }
+  .rojo:hover {
+    background-color: rgb(194, 0, 0);
+}
+  .gris {
+    cursor: pointer;
+    width: 50px; /* Establece el ancho del círculo (ajusta según tus necesidades) */
+    height: 50px; /* Establece la altura del círculo (ajusta según tus necesidades) */
+    background-color: grey; /* Color de fondo rojo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+  }
+
+  .grisPista {
+    width: 20px; /* Establece el ancho del círculo (ajusta según tus necesidades) */
+    height: 20px; /* Establece la altura del círculo (ajusta según tus necesidades) */
+    background-color: grey; /* Color de fondo rojo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+  }
+  .negroPista {
+    width: 20px; /* Establece el ancho del círculo (ajusta según tus necesidades) */
+    height: 20px; /* Establece la altura del círculo (ajusta según tus necesidades) */
+    background-color: rgb(0, 0, 0); /* Color de fondo rojo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+  }
+  .blancoPista {
+    width: 20px; /* Establece el ancho del círculo (ajusta según tus necesidades) */
+    height: 20px; /* Establece la altura del círculo (ajusta según tus necesidades) */
+    background-color: rgb(229, 255, 0); /* Color de fondo rojo */
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+  }
+
+
+
+
+  .tablero{
+    margin-top: 30px;
+    margin-left: 20%;
+  }
+
+  .tableroTable{
+    border: 1px solid black;
+  }
+
+  .tableroTable td {
+    border: 1px solid black;
+  }
+
+
+  .pistasContainer{
+    width: 200px;
+    margin-top: 5px;
+    margin-left: 2%;
+  }
+
+
+  .pistasTable{
+    height: auto;
+    border-collapse: separate;
+    border-spacing: 0px 36px;
+    
+  }
+
+.comoJugar{
+  margin: 100px 20%;
+}
+
+
+  
