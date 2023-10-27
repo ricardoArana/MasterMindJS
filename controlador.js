@@ -41,19 +41,22 @@ function main() {
             }
             
         }
-    
+        let contIndexPosicion = 0;
+        let contIndexIncluido = 0;
+        //Esta es la logica para colorear las pistas:
         for (let i = 0; i < 4; i++) {//voy recorriendo cada fila de las pistas i<4 porque son las combinaciones posibles    
             if (filaTablero.includes(combinacionGanadora[i])) { //Comprueba si la fila del usuario contiene un color ganador
-                    todosTd[i + contadorFilasTablero].classList.remove("grisPista");
-                    todosTd[i + contadorFilasTablero].classList.add("blancoPista");
-                }
-                console.log(filaTablero[i] + " " + combinacionGanadora[i])
+                todosTd[contIndexIncluido + contadorFilasTablero].classList.add("blancoPista");
+                contIndexIncluido++
+            }
             if(combinacionGanadora[i] == filaTablero[i]){//comprueba si el usuario ha acertado posicion y color
                 contAciertos++;
-                todosTd[i + contadorFilasTablero].classList.remove("grisPista");
-                todosTd[i + contadorFilasTablero].classList.remove("blancoPista");
-                todosTd[i + contadorFilasTablero].classList.add("negroPista");
+                todosTd[contIndexPosicion + contadorFilasTablero].classList.remove("grisPista");
+                todosTd[contIndexPosicion + contadorFilasTablero].classList.remove("blancoPista");
+                todosTd[contIndexPosicion + contadorFilasTablero].classList.add("negroPista");
+                contIndexPosicion++
             }
+
                 
             }
             if (comprobarVictoria()) {

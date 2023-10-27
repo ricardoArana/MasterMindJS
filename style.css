@@ -124,4 +124,62 @@ align-content: space-between;
 }
 
 
-  
+@media (max-width: 768px) {
+  /* Estilos para dispositivos con un ancho máximo de 768px (típicamente, smartphones) */
+
+  body {
+      font-size: 16px;
+  }
+
+  .titulo h1 {
+      font-size: 24px;
+  }
+
+  .tablasContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .fichasJugador {
+      margin-bottom: 20px;
+      width: 20%;
+  }
+
+  .fichasJugadorTable {
+      width: 100%;
+  }
+
+  .fichasJugadorTable td {
+      width: 70%;
+  }
+
+  .tablero {
+      width: 70%;
+  }
+
+  .tableroTable {
+      width: 100%;
+  }
+
+  .tableroTable td {
+      width: 25%;
+  }
+
+  .pistasContainer {
+      margin-top: 20px;
+  }
+
+  .pistasTable {
+      width: 70%;
+  }
+
+  .pistasTable td {
+      width: 25%;
+  }
+
+  .comoJugar {
+      font-size: 18px;
+      margin: 20px;
+  }
+}
